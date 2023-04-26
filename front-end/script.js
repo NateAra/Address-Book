@@ -19,7 +19,6 @@ function displayAddresses(){
 }
 
 
-
 // Function to creating a new address
 function createAddress(){
     
@@ -33,8 +32,8 @@ function createAddress(){
         street
     };
 
-    fetch(`http://localhost:8080/addresses/addresses`, {
-        method: 'PUT',
+    fetch(`http://localhost:8080/addresses`, {
+        method: 'POST',
         headers: {
             'Content-Type':'application/json'
         },
